@@ -1,0 +1,118 @@
+@font-face {
+    font-family: poppins;
+    src: local("poppins"),
+    local(poppins-regular),
+    url("../fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: poppins, Tahoma;
+}
+
+body{
+    background-color: #080710;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Register form Styles */
+#register-container{
+    max-width:400px;
+    height:480px;
+    padding: 35px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.13);
+    border:2px solid rgba(255, 255, 255, 0.13);
+    backdrop-filter: blur(5px);
+}
+
+/* Login form Styles */
+#login-container{
+    background-image: url(../images/bg1.png);
+    background-size: cover;
+    border:1px solid #eee;
+    height: 380px;
+    border-radius: 20% 20% 5px 5px;
+    padding: 35px;
+    position: absolute;
+    top:380px;
+    right: 15px;
+    left: 15px;
+    transition: all 200ms ease-out;
+}
+
+/* Form Title styles */
+h2{
+    color: white;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+/* Form Input styles */
+input{
+    color: white;
+    background-color: rgba(255, 255, 255, 0.07);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    width: 80%;
+}
+
+/* Login Form input - extra styles */
+.login-input{
+    background-color: #fff;
+    color: #111;
+}
+
+/* botton styles */
+button{
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+    padding: 15px;
+    margin-top: 25px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* body background */
+.circle1, .circle2 , .circle3{
+    border-radius: 100%;
+    position:fixed;
+}
+
+.circle1{
+    background-image: linear-gradient(rgb(82,55,71), rgb(255, 231, 246));
+    width: 200px;
+    height: 200px;
+    top:calc(50% - 350px);
+    left:calc(50% - 250px);
+}
+
+.circle2{
+    background-image: linear-gradient(rgb(29,100,127), rgb(155, 227, 255));
+    width: 300px;
+    height: 300px;
+    top:calc(50% + 10px);
+    left:calc(50% + 60px);
+}
+
+.circle3{
+    background-image: linear-gradient(rgb(29,100,127), rgb(155, 227, 255));
+    width: 100px;
+    height: 100px;
+    top:calc(50% - 165px);
+    left:calc(50% - 265px);
+}
